@@ -1,0 +1,25 @@
+body
+{
+background-attachment: fixed;
+background-color: white;
+}
+h1
+{
+    text-align: center;
+    color: black;
+}
+p
+{
+    text-align: center;
+    color: black;
+}
+title
+{
+    text-align: center;
+    color: black;
+}
+::content
+{
+    text-align: center;
+    color: black;
+}
