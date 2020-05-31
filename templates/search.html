@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>查找书目</title>
+    <link rel="stylesheet" href="{% static 'search.css' %}">
+</head>
+<body>
+    {% csrf_token %}
+<form method="POST" action="/bookstore1/book_information">
+    <div class="SearchBox">
+            <img src="{% static 'book.jpg' %}" class="user">
+            <h2>搜索</h2>
+                <p>选择查找关键字</p>
+                <select type="text" name="label" placeholder="您的关键字">
+                <option value ="作者">作者</option>
+                <option value ="ISBN">ISBN</option>
+                <option value="书名">书名</option>
+                <option value="评分大于">评分大于</option>
+                <option value="评分小于">评分小于</option>
+                <option value="价格小于">价格小于</option>
+                <option value="价格大于">价格大于</option>
+                </select>
+                <input type="text" name="name" placeholder="您要查找的内容">
+                <input type="submit" name="" value="搜索">
+                <a href="FAQ">需要帮助？</a>
+        </div>
+</form>
+</body>
+</html>

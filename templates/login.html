@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Login Form</title>
+        <link rel="stylesheet" href="{% static 'login.css' %}">
+    </head>
+    <body>
+        {% csrf_token %}
+        <div class="loginBox">
+            <img src="{% static 'user.jpg' %}" class="user">
+            <h2>登录</h2>
+            <form>
+                <p>您的ID</p>
+                <input type="text" name="username" placeholder="ID">
+                <p>密码</p>
+                <input type="password" name="password" placeholder="......">
+                <input type="submit" name="" value="登录">
+                <a href="#">忘记密码</a>
+            </form>
+        </div>
+        </body>
+</html>
+
