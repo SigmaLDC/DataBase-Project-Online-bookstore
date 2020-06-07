@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{%static '/style.css'%}">
+</head>
+<body>
+    <p>
+        <li>items you have added:</li>
+    </p>
+    <form action="demo_form.php" method="get">
+        item1: <input type="text" name="item1"><br>
+        item2: <input type="text" name="item2"><br>
+        <label for="">pay</label><input type="submit" value="提交">
+    </form>
+</body>
+</html>

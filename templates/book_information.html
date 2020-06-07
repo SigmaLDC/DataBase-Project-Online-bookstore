@@ -1,11 +1,23 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="{% static 'uplist.css' %}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    
+    <nav>
+		<ul>
+			<li class="active"><a href="main">首页</a></li>
+			<li><a href="search">查找</a></li>
+			<li><a href="register">注册</a></li>
+			<li><a href="login_view">登录</a></li>
+			<li><a href="help">帮助</a></li>
+            <li><a href="basket">购物车</a></li>
+            <li><a href="checkout">checkout</a></li>
+		</ul>
+	</nav>
 </body>
 </html>

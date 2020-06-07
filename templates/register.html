@@ -8,7 +8,7 @@
 <body>
     <h1 class="title"> {{title}} </h1>
     <p class='content'>{{content}} </p>
-    <form action="/bookstore1/register" method="post">
+    <form action="/bookstore1/regist" method="post">{% csrf_token %}
         <p>
             <label>username:</label><input type="text" name="username" />
         </p>
@@ -16,7 +16,10 @@
             <label>password:</label><input type="password" name="password" />
         </p>
         <p>
-            <label>username:</label><input type="submit" name="register" />
+            <label>Emalil</label><input type="text" name="email" />
+        </p>
+        <p>
+            <label></label><input type="submit" name="register" method="post"/>
         </p>
     </form>
 </body>

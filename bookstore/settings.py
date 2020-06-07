@@ -74,13 +74,13 @@ WSGI_APPLICATION = 'bookstore.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+#数据库需要进行因人而异
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'mysql',
         "USER":"root",
-        "PASSWORD":"jihuangshen30245",
-        'HOST':'127.0.0.1'
+        "PASSWORD":"root",
     }
 }
 
